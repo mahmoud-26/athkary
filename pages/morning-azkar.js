@@ -28,6 +28,7 @@ fetch("../json/azkar.json")
           countDiv.style.fontSize = "26px";
           cardDiv.classList.add("card-disabled");
           contentDiv.classList.add("content-disabled");
+          window.navigator.vibrate(100);
         }
       });
     }
