@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
@@ -5,15 +7,19 @@
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
 }
+
 ::selection {
   color: black;
   background-color: var(--neon-green);
 }
+
 * {
   box-sizing: border-box;
   font-family: monospace;
-  -webkit-tap-highlight-color: transparent;;
+  -webkit-tap-highlight-color: transparent;
+  ;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -22,6 +28,7 @@ body {
   overflow-y: scroll;
   background-color: var(--dark-blue);
 }
+
 .container {
   width: 100%;
   padding: 20px;
@@ -32,13 +39,15 @@ body {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  word-spacing: -3px;
+  word-spacing: 2px;
   background-color: var(--dark-grayish-blue);
   box-shadow: 0 3px 0 0 var(--grayish-blue);
 }
+
 .card:not(:first-of-type) {
   margin-top: 30px;
 }
+
 .count {
   padding: 20px;
   font-size: 30px;
@@ -48,36 +57,44 @@ body {
   user-select: none;
   cursor: pointer;
 }
+
 .content {
   padding: 10px 0 10px 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
   color: var(--light-cyan);
   box-shadow: transparent;
+  font-weight: 600;
+  font-family: 'Cairo', sans-serif;
 }
+
 .card-disabled {
   cursor: not-allowed;
   border-radius: 5px;
   background-color: hsla(217, 19%, 19%, 1);
   box-shadow: 0 3px 0 0 hsla(217, 18%, 23%, 1);
 }
+
 .content-disabled {
   cursor: not-allowed;
   border-radius: 5px;
   color: hsla(193, 2%, 39%, 1);
   background-color: hsla(217, 19%, 19%, 1);
 }
+
 @media (min-width:900px) {
   body {
     padding: 50px 90px;
   }
+
   .card:not(:first-of-type) {
     margin-top: 50px;
   }
+
   .count {
     font-size: 50px;
     padding: 25px;
   }
+
   .content {
     font-size: 30px;
     padding: 15px 0 15px 15px;

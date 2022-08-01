@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
@@ -39,10 +41,10 @@ body {
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  word-spacing: -10px;
   border: none;
   border-radius: 5px;
   color: var(--light-cyan);
+  font-family: 'Cairo', sans-serif;
   background-color: var(--dark-grayish-blue);
   box-shadow: 0 3px 0 0 var(--grayish-blue);
 }
@@ -55,10 +57,10 @@ body {
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  word-spacing: -10px;
   border: none;
   border-radius: 5px;
   color: var(--light-cyan);
+  font-family: 'Cairo', sans-serif;
   background-color: var(--dark-grayish-blue);
   box-shadow: 0 3px 0 0 var(--grayish-blue);
 }
