@@ -25,7 +25,8 @@ fetch("../json/azkar.json")
         else {
           countDiv.innerHTML = "✓";
           countDiv.style.color = "gray";
-          countDiv.style.fontSize = "26px";
+          countDiv.style.fontSize = "25px";
+          countDiv.style.padding = "20px 18.6px";
           cardDiv.classList.add("card-disabled");
           contentDiv.classList.add("content-disabled");
           window.navigator.vibrate(100);
